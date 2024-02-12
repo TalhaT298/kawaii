@@ -1,11 +1,4 @@
-import React from 'react';
-
-const Routes = () => {
-    return (
-        <div>
-            
-        </div>
-    );
-};
-
-export default Routes;
+import {
+    createBrowserRouter,
+    RouterProvider,
+  } from "react-router-dom";
