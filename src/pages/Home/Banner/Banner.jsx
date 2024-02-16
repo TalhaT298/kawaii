@@ -7,7 +7,7 @@ import img3 from "../../../assets/3.webp";
 const Banner = () => {
     return (
         <div>
-            <Carousel>
+            <Carousel autoPlay={true} interval={2000} infiniteLoop={true} showArrows={false}>
                 <div>
                     <img src={img1} />
                     
