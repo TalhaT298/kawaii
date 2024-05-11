@@ -56,7 +56,7 @@ const Footer = () => {
         </nav>
         
       </footer>
-      <p>Copyright ©2022 All right reserved by Talha Tarique</p>
+      <p className="bg-pink-200 text-center">Copyright ©2022 All right reserved by Kawai Velvet</p>
     </div>
   );
 };
