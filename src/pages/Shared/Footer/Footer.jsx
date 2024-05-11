@@ -56,7 +56,7 @@ const Footer = () => {
         </nav>
         
       </footer>
-      <p className="bg-pink-200 text-center">Copyright ©2022 All right reserved by Kawai Velvet</p>
+      <p className="bg-pink-200 text-center font-sans">Copyright ©2022 All right reserved by Kawai Velvet</p>
     </div>
   );
 };
