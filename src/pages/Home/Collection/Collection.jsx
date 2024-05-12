@@ -1,5 +1,6 @@
 import React from "react";
 import Cata from "../../../assets/cate.webp";
+import Spring from "../../../assets/spring.webp";
 import { motion } from "framer-motion";
 const Collection = () => {
   return (
@@ -31,7 +32,7 @@ const Collection = () => {
           >
             <img
               className="w-68 h-96  border-8 border-white"
-              src={Cata}
+              src={Spring}
               alt=""
             />
           </motion.div>
