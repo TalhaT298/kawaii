@@ -1,6 +1,6 @@
 import React from "react";
 import Cata from "../../../assets/cate.webp"
-
+import { motion } from "framer-motion"
 const Collection = () => {
   return (
     <div>
