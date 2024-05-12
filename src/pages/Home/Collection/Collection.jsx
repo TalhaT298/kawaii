@@ -10,11 +10,11 @@ const Collection = () => {
         </h3>
       </div>
       <div>
-        <div class="flex">
-          <div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }} class="w-1/4 p-4"><img src={Cata} alt="" /></div>
-          <div class="w-1/4 p-4"><img src={Cata} alt="" /></div>
-          <div class="w-1/4 p-4"><img src={Cata} alt="" /></div>
-          <div class="w-1/4 p-4"><img src={Cata} alt="" /></div>
+        <div className="flex gap-6 justify-center items-center text-center">
+          <motion.div className="" whileHover={{scale: 1.06, transition: { duration: 0.9 } }} whileTap={{ scale: 0.9 }} class=" p-4"><img className="w-68 h-96  border-8 border-white" src={Cata} alt="" /></motion.div>
+          <div class=" p-4"><img className="w-68 h-96" src={Cata} alt="" /></div>
+          <div class=" p-4"><img className="w-68 h-96" src={Cata} alt="" /></div>
+          <div class=" p-4"><img className="w-68 h-96" src={Cata} alt="" /></div>
           
         </div>
       </div>
