@@ -6,13 +6,14 @@ import Sakura from "../../../assets/sakura.webp";
 import Peach from "../../../assets/peach.webp";
 import Colo from "../../../assets/colors.webp";
 import Black from "../../../assets/bl.webp";
+import be from "../../../assets/be.webp";
 import { motion } from "framer-motion";
 const Collection = () => {
   return (
     <div>
       <div className="mx-auto  flex justify-center items-center ">
         <h3 className="text-3xl text-pink-400 uppercase bg-pink-200 w-full h-24 flex justify-center items-center text-center  font-bold font-serif">
-          NEW RELEASED COLLECTION
+        Let's Create something beautiful together
         </h3>
       </div>
       <div className="py-4">
@@ -112,7 +113,7 @@ const Collection = () => {
           >
             <img
               className="w-68 h-96  border-8 border-white"
-              src={Cata}
+              src={be}
               alt=""
             />
           </motion.div>
