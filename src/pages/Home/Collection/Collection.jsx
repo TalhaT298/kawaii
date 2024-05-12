@@ -5,6 +5,7 @@ import Chary from "../../../assets/chary.webp";
 import Sakura from "../../../assets/sakura.webp";
 import Peach from "../../../assets/peach.webp";
 import Colo from "../../../assets/colors.webp";
+import Black from "../../../assets/bl.webp";
 import { motion } from "framer-motion";
 const Collection = () => {
   return (
@@ -99,7 +100,7 @@ const Collection = () => {
           >
             <img
               className="w-68 h-96  border-8 border-white"
-              src={Cata}
+              src={Black}
               alt=""
             />
           </motion.div>
