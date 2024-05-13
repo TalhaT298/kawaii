@@ -60,7 +60,7 @@ const Newly = () => {
           </div>
         </div>
         <button className="cursor-pointer flex justify-center items-center text-center bg-pink-300 px-6 py-3 text-white font-semibold flex-grow hover:text-pink-400 hover:bg-pink-100 mx-auto">
-          Browse All Collections
+          View All
         </button>
       </div>
     </div>
