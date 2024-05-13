@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Cata from "../../../assets/cate.webp";
 import Spring from "../../../assets/spring.webp";
 import Chary from "../../../assets/chary.webp";
@@ -9,6 +9,22 @@ import Black from "../../../assets/bl.webp";
 import be from "../../../assets/be.webp";
 import { motion } from "framer-motion";
 const Collection = () => {
+  useEffect(() => {
+    // Add JavaScript to show modal when button clicked
+    setTimeout(() => {
+      const notification = document.getElementById("purchase_notification");
+      if (notification) {
+        notification.style.display = "none";
+        notification.addEventListener("click", () => {
+          const modal = document.getElementById("my_modal_3");
+          modal.showModal();
+          setTimeout(() => {
+            modal.close();
+          }, 5000); // Close modal after 5 seconds
+        });
+      }
+    }, 5000); // Hides notification after 5 seconds
+  }, []);
   return (
     <div>
       <div className="mx-auto  flex justify-center items-center ">
@@ -115,29 +131,25 @@ const Collection = () => {
           </motion.div>
         </div>
         <button
-          className="btn rounded-none"
-          onClick={() => {
-            const modal = document.getElementById("my_modal_3");
-            modal.showModal();
-            setTimeout(() => modal.close(), 5000); // Close modal after 5 seconds
-          }}
-        >
-          someone just buy Embroidered Genuine Leather Bag
-        </button>
-        <dialog id="my_modal_3" className="modal">
-          <div className="modal-box">
-            <form method="dialog ">
-              {/* if there is a button in form, it will close the modal */}
-              <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">
-                ✕
-              </button>
-            </form>
-            <h3 className="font-bold text-lg">Tk 3,219.05</h3>
-            <p className="py-4">
-              Grey Erri Embroidered Genuine Leather Bag Add to Wish List
-            </p>
-          </div>
-        </dialog>
+        id="purchase_notification"
+        className="btn rounded-none"
+      >
+        someone just buy Embroidered Genuine Leather Bag
+      </button>
+      <dialog id="my_modal_3" className="modal">
+        <div className="modal-box">
+          <form method="dialog">
+            {/* if there is a button in form, it will close the modal */}
+            <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">
+              ✕
+            </button>
+          </form>
+          <h3 className="font-bold text-lg">Tk 3,219.05</h3>
+          <p className="py-4">
+            Grey Erri Embroidered Genuine Leather Bag Add to Wish List
+          </p>
+        </div>
+      </dialog>
         <button className="cursor-pointer flex justify-center items-center text-center bg-pink-300 px-6 py-3 text-white font-semibold flex-grow hover:text-pink-400 hover:bg-pink-100 mx-auto">
           Browse All Collections
         </button>
