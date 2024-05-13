@@ -116,7 +116,11 @@ const Collection = () => {
         </div>
         <button
           className="btn rounded-none"
-          onClick={() => document.getElementById("my_modal_3").showModal()}
+          onClick={() => {
+            const modal = document.getElementById("my_modal_3");
+            modal.showModal();
+            setTimeout(() => modal.close(), 5000); // Close modal after 5 seconds
+          }}
         >
           someone just buy Embroidered Genuine Leather Bag
         </button>
