@@ -115,21 +115,23 @@ const Collection = () => {
           </motion.div>
         </div>
         <button
-          className="btn"
+          className="btn rounded-none"
           onClick={() => document.getElementById("my_modal_3").showModal()}
         >
-          open modal
+          someone just buy Embroidered Genuine Leather Bag
         </button>
         <dialog id="my_modal_3" className="modal">
           <div className="modal-box">
-            <form method="dialog">
+            <form method="dialog ">
               {/* if there is a button in form, it will close the modal */}
               <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">
                 ✕
               </button>
             </form>
-            <h3 className="font-bold text-lg">Hello!</h3>
-            <p className="py-4">Press ESC key or click on ✕ button to close</p>
+            <h3 className="font-bold text-lg">Tk 3,219.05</h3>
+            <p className="py-4">
+              Grey Erri Embroidered Genuine Leather Bag Add to Wish List
+            </p>
           </div>
         </dialog>
         <button className="cursor-pointer flex justify-center items-center text-center bg-pink-300 px-6 py-3 text-white font-semibold flex-grow hover:text-pink-400 hover:bg-pink-100 mx-auto">
