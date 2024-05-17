@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
-
+import Cata from "../../../assets/cate.webp";
 const Facebook = () => {
   return (
     <div>
@@ -12,6 +12,19 @@ const Facebook = () => {
           </span>
         </h3>
       </div>
+
+      <div className="flex gap-6 justify-center items-center text-center">
+          <div 
+          >
+            <img
+              className="w-68 h-96  border-8 border-white"
+              src={Cata}
+              alt=""
+            />
+          </div>
+          
+        </div>
+
     </div>
   );
 };

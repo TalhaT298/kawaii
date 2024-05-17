@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, { useEffect } from "react";
 import Cata from "../../../assets/cate.webp";
 import Spring from "../../../assets/spring.webp";
@@ -29,7 +30,7 @@ const Collection = () => {
     <div>
       <div className="mx-auto  flex justify-center items-center ">
         <h3 className="text-3xl text-gray-50 uppercase bg-pink-300 w-full h-24 flex justify-center items-center text-center  font-bold font-serif">
-          Let's Create something beautiful together
+          Lets Create something beautiful together
         </h3>
       </div>
       <div className="py-4">
