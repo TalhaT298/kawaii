@@ -91,6 +91,7 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
+import Cata from "../../../assets/cate.webp";
 const Facebook = () => {
   return (
     <div>
@@ -102,7 +103,18 @@ const Facebook = () => {
           </span>
         </h3>
       </div>
-
+    <div>
+    <Swiper watchSlidesProgress={true} slidesPerView={4} className="mySwiper">
+        <SwiperSlide><img src={Cata} alt=""  /></SwiperSlide>
+        <SwiperSlide><img src={Cata} alt=""  /></SwiperSlide>
+        <SwiperSlide><img src={Cata} alt=""  /></SwiperSlide>
+        <SwiperSlide><img src={Cata} alt=""  /></SwiperSlide>
+        <SwiperSlide><img src={Cata} alt=""  /></SwiperSlide>
+        <SwiperSlide><img src={Cata} alt=""  /></SwiperSlide>
+       
+        
+      </Swiper>
+    </div>
     </div>
   );
 };
