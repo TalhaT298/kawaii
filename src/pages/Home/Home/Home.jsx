@@ -5,6 +5,7 @@ import Collection from '../Collection/Collection';
 import Newly from '../Newly/Newly';
 import Facebook from '../Facebook/Facebook';
 
+
 // import Customer from '../Customer/Customer';
 
 const Home = () => {
@@ -15,6 +16,7 @@ const Home = () => {
             <Collection></Collection>
             <Facebook></Facebook>
             {/* <Customer></Customer> */}
+            
         </div>
     );
 };
