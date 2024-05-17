@@ -4,7 +4,7 @@ import Banner from '../Banner/Banner';
 import Collection from '../Collection/Collection';
 import Newly from '../Newly/Newly';
 import Facebook from '../Facebook/Facebook';
-// import Testimonial from '../Testimonial/Testimonial';
+
 // import Customer from '../Customer/Customer';
 
 const Home = () => {
@@ -15,7 +15,6 @@ const Home = () => {
             <Collection></Collection>
             <Facebook></Facebook>
             {/* <Customer></Customer> */}
-            {/* <Testimonial></Testimonial> */}
         </div>
     );
 };
