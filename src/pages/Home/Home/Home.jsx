@@ -4,7 +4,8 @@ import Banner from '../Banner/Banner';
 import Collection from '../Collection/Collection';
 import Newly from '../Newly/Newly';
 import Facebook from '../Facebook/Facebook';
-import Customer from '../Customer/Customer';
+import Testimonial from '../Testimonial/Testimonial';
+// import Customer from '../Customer/Customer';
 
 const Home = () => {
     return (
@@ -13,7 +14,8 @@ const Home = () => {
             <Newly></Newly>
             <Collection></Collection>
             <Facebook></Facebook>
-            <Customer></Customer>
+            {/* <Customer></Customer> */}
+            <Testimonial></Testimonial>
         </div>
     );
 };
