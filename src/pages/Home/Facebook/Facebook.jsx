@@ -104,7 +104,8 @@ const Facebook = () => {
         </h3>
       </div>
     <div>
-    <Swiper watchSlidesProgress={true} slidesPerView={4} className="mySwiper">
+    <Swiper watchSlidesProgress={true} slidesPerView={6} className="mySwiper">
+        <SwiperSlide><img src={Cata} alt=""  /></SwiperSlide>
         <SwiperSlide><img src={Cata} alt=""  /></SwiperSlide>
         <SwiperSlide><img src={Cata} alt=""  /></SwiperSlide>
         <SwiperSlide><img src={Cata} alt=""  /></SwiperSlide>
