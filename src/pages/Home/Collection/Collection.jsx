@@ -21,10 +21,10 @@ const Collection = () => {
           modal.showModal();
           setTimeout(() => {
             modal.close();
-          }, 5000); // Close modal after 5 seconds
+          }, 10000); // Close modal after 5 seconds
         });
       }
-    }, 5000); // Hides notification after 5 seconds
+    }, 10000); // Hides notification after 5 seconds
   }, []);
   return (
     <div>
