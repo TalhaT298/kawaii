@@ -14,7 +14,6 @@ const Home = () => {
             <Collection></Collection>
             <Facebook></Facebook>
             <Customer></Customer>
-            
         </div>
     );
 };
