@@ -1,12 +1,12 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
-
+import logo from '../../../assets/logo.png'
 const Navbar = () => {
   return (
     <div>
       <nav className="flex items-center justify-between bg-pink-100 px-4 py-2 text-white">
         <div className="scale-100 rounded-2xl px-3 py-2 text-xl font-semibold text-white transition-all duration-200 hover:scale-110">
-          <h2>Logo</h2>
+          <img src={logo} className="h-10" alt="" />
         </div>
         <ul className="flex items-center justify-between gap-6 text-slate-900 ">
           <li className="cursor-pointer  rounded-full  px-6 py-2 text-pink-400 font-semibold">
