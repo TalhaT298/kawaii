@@ -8,7 +8,7 @@ const Footer = () => {
       <footer className="footer p-10 bg-pink-300 text-base-content">
         <aside>
           <div>
-            <p>Kawaii Valvet</p>
+            <img src={""} alt="" />
             <p>Your one stop shop for your shop needs!</p>
             <div className="flex">
               <Link>

@@ -5,8 +5,9 @@ const Navbar = () => {
   return (
     <div>
       <nav className="flex items-center justify-between bg-pink-100 px-4 py-2 text-white">
-        <div className="scale-100 rounded-2xl px-3 py-2 text-xl font-semibold text-white transition-all duration-200 hover:scale-110">
+        <div className="scale-100 flex rounded-2xl px-3 py-2 text-xl font-semibold text-white transition-all duration-200">
           <img src={logo} className="h-10" alt="" />
+          <p className="text-2xl text-pink-400">kawaiVelvet</p>
         </div>
         <ul className="flex items-center justify-between gap-6 text-slate-900 ">
           <li className="cursor-pointer  rounded-full  px-6 py-2 text-pink-400 font-semibold">
