@@ -1,14 +1,16 @@
+/* eslint-disable no-unused-vars */
 import React from "react";
 import { Link } from "react-router-dom";
 import { GrFacebookOption } from "react-icons/gr";
 import { IoLogoInstagram } from "react-icons/io";
+import logo from "../../../assets/logo.png"
 const Footer = () => {
   return (
     <div>
       <footer className="footer p-10 bg-pink-300 text-base-content">
         <aside>
           <div>
-            <img src={""} alt="" />
+            <img src={logo} className="h-10" alt="" />
             <p>Your one stop shop for your shop needs!</p>
             <div className="flex">
               <Link>
