@@ -115,12 +115,10 @@ const Customer = () => {
                 className="w-24 h-24 rounded-full object-cover mb-4"
               />
               <h3 className="text-xl font-semibold text-pink-300 mb-2">
-                Razia Sultana
+              Farhan Ahmed
               </h3>
               <p className="text-gray-700 text-center mb-4">
-                The customer service is excellent! They are always ready to help
-                with any queries and the return policy is hassle-free.I love how
-                reliable this Velvet is
+              The site’s loyalty program is fantastic! I get rewarded for every purchase, and the points system is very generous.
               </p>
               <div className="flex space-x-1 text-yellow-500">
                 {[...Array(5)].map((_, index) => (
