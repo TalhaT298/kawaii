@@ -25,7 +25,26 @@ const Customer = () => {
         modules={[Pagination]}
         className="mySwiper"
       >
-        <SwiperSlide>Slide 1</SwiperSlide>
+        <SwiperSlide>
+            <div className="flex flex-col items-center p-6 bg-white rounded-lg shadow-md">
+              <img
+                src="customer-image.jpg" // Replace with actual image path
+                alt="Customer"
+                className="w-24 h-24 rounded-full object-cover mb-4"
+              />
+              <h3 className="text-xl font-semibold mb-2">Customer Name</h3>
+              <p className="text-gray-700 text-center mb-4">
+                This is a description of the customer. They have provided a review about the product or service.
+              </p>
+              <div className="flex space-x-1 text-yellow-500">
+                {[...Array(5)].map((_, index) => (
+                  <svg key={index} className="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                    <path d="M12 .587l3.668 7.429L24 9.234l-5.686 5.423L19.747 24 12 20.413 4.253 24l1.433-9.343L0 9.234l8.332-1.218z"/>
+                  </svg>
+                ))}
+              </div>
+            </div>
+          </SwiperSlide>
         <SwiperSlide>Slide 2</SwiperSlide>
         <SwiperSlide>Slide 3</SwiperSlide>
         <SwiperSlide>Slide 4</SwiperSlide>
