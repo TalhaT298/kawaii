@@ -5,11 +5,12 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 // import required modules
 import { Pagination, Navigation } from "swiper/modules";
+import Ayesha from "../../../assets/AyeshaRahman.png"
 
 const Customer = () => {
   return (
     <div>
-      <div className='mx-auto flex justify-center items-center'>
+      <div className='mx-auto flex justify-center items-center '>
         <h3 className="text-3xl text-gray-50 uppercase bg-pink-300 w-full h-24 flex justify-center items-center text-center font-bold font-serif">
           Client Feedback
         </h3>
@@ -28,13 +29,13 @@ const Customer = () => {
         <SwiperSlide>
             <div className="flex flex-col items-center p-6 bg-pink-300 rounded-lg shadow-md">
               <img
-                src="customer-image.jpg" // Replace with actual image path
+                src={Ayesha} // Replace with actual image path
                 alt="Customer"
                 className="w-24 h-24 rounded-full object-cover mb-4"
               />
-              <h3 className="text-xl font-semibold mb-2">Customer Name</h3>
+              <h3 className="text-xl font-semibold mb-2">Ayesha Rahman</h3>
               <p className="text-gray-700 text-center mb-4">
-                This is a description of the customer. They have provided a review about the product or service.
+              The variety of halal-certified makeup products is amazing. It’s reassuring to find a site that caters to my needs with such a wide selection
               </p>
               <div className="flex space-x-1 text-yellow-500">
                 {[...Array(5)].map((_, index) => (
