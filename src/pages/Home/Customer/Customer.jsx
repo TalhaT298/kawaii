@@ -27,13 +27,13 @@ const Customer = () => {
         className="mySwiper"
       >
         <SwiperSlide>
-            <div className="flex flex-col items-center p-6 bg-pink-300 rounded-lg shadow-md">
+            <div className="flex flex-col items-center p-6 bg-white border-8 border-pink-300 shadow-md">
               <img
                 src={Ayesha} // Replace with actual image path
                 alt="Customer"
                 className="w-24 h-24 rounded-full object-cover mb-4"
               />
-              <h3 className="text-xl font-semibold mb-2">Ayesha Rahman</h3>
+              <h3 className="text-xl font-semibold text-pink-300 mb-2">Ayesha Rahman</h3>
               <p className="text-gray-700 text-center mb-4">
               The variety of halal-certified makeup products is amazing. It’s reassuring to find a site that caters to my needs with such a wide selection
               </p>
