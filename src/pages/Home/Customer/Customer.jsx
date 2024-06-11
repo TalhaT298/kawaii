@@ -8,6 +8,7 @@ import { Pagination, Navigation } from "swiper/modules";
 import Ayesha from "../../../assets/AyeshaRahman.png";
 import Razia from "../../../assets/Razia.png";
 import Nafisa from "../../../assets/Nafisa.png";
+import Farhan from "../../../assets/Farhan.png";
 
 const Customer = () => {
   return (
@@ -110,7 +111,7 @@ const Customer = () => {
             </div></SwiperSlide>
           <SwiperSlide><div className="flex flex-col items-center p-6 bg-white border-8 border-pink-300 shadow-md">
               <img
-                src={Razia} // Replace with actual image path
+                src={Farhan} // Replace with actual image path
                 alt="Customer"
                 className="w-24 h-24 rounded-full object-cover mb-4"
               />
