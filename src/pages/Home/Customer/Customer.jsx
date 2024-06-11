@@ -2,7 +2,7 @@
 import React, { useRef, useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-
+import logo from "../../../assets/logo.png";
 // import required modules
 import { Pagination, Navigation } from "swiper/modules";
 import Ayesha from "../../../assets/AyeshaRahman.png";
@@ -34,7 +34,15 @@ const Customer = () => {
           className="mySwiper"
         >
           <SwiperSlide>
-            <div className="flex flex-col items-center p-6 bg-white border-8 border-pink-300 shadow-md">
+            <div
+              className="flex flex-col items-center p-6 bg-white border-8 border-pink-300 shadow-md"
+              style={{
+                backgroundImage:
+                  'url("https://i.ibb.co/3d8Y9Zn/Screenshot-96.png")',
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+              }}
+            >
               <img
                 src={Ayesha} // Replace with actual image path
                 alt="Customer"
@@ -43,7 +51,7 @@ const Customer = () => {
               <h3 className="text-xl font-semibold text-pink-300 mb-2">
                 Ayesha Rahman
               </h3>
-              <p className="text-gray-700 text-center mb-4">
+              <p className="text-gray-700 font-bold text-center mb-4">
                 The variety of halal-certified makeup products is amazing. It’s
                 reassuring to find a site that caters to my needs with such a
                 wide selection
@@ -62,7 +70,15 @@ const Customer = () => {
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="flex flex-col items-center p-6 bg-white border-8 border-pink-300 shadow-md">
+            <div
+              className="flex flex-col items-center p-6 bg-white border-8 border-pink-300 shadow-md"
+              style={{
+                backgroundImage:
+                  'url("https://i.ibb.co/3d8Y9Zn/Screenshot-96.png")',
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+              }}
+            >
               <img
                 src={Razia} // Replace with actual image path
                 alt="Customer"
@@ -71,7 +87,7 @@ const Customer = () => {
               <h3 className="text-xl font-semibold text-pink-300 mb-2">
                 Razia Sultana
               </h3>
-              <p className="text-gray-700 text-center mb-4">
+              <p className="text-gray-700 font-bold text-center mb-4">
                 The customer service is excellent! They are always ready to help
                 with any queries and the return policy is hassle-free.I love how
                 reliable this Velvet is
@@ -90,7 +106,15 @@ const Customer = () => {
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="flex flex-col items-center p-6 bg-white border-8 border-pink-300 shadow-md">
+            <div
+              className="flex flex-col items-center p-6 bg-white border-8 border-pink-300 shadow-md"
+              style={{
+                backgroundImage:
+                  'url("https://i.ibb.co/3d8Y9Zn/Screenshot-96.png")',
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+              }}
+            >
               <img
                 src={Nafisa} // Replace with actual image path
                 alt="Customer"
@@ -99,7 +123,7 @@ const Customer = () => {
               <h3 className="text-xl font-semibold text-pink-300 mb-2">
                 Nafisa Islam
               </h3>
-              <p className="text-gray-700 text-center mb-4">
+              <p className="text-gray-700 font-bold text-center mb-4">
                 The makeup tutorials and beauty tips available on the site are
                 extremely helpful. They have improved my makeup skills
                 tremendously!
@@ -118,7 +142,15 @@ const Customer = () => {
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="flex flex-col items-center p-6 bg-white border-8 border-pink-300 shadow-md">
+            <div
+              className="flex flex-col items-center p-6 bg-white border-8 border-pink-300 shadow-md"
+              style={{
+                backgroundImage:
+                  'url("https://i.ibb.co/3d8Y9Zn/Screenshot-96.png")',
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+              }}
+            >
               <img
                 src={Fatima} // Replace with actual image path
                 alt="Customer"
@@ -127,7 +159,7 @@ const Customer = () => {
               <h3 className="text-xl font-semibold text-pink-300 mb-2">
                 Fatima Khan
               </h3>
-              <p className="text-gray-700 text-center mb-4">
+              <p className="text-gray-700 font-bold text-center mb-4">
                 The discounts and offers are unbeatable. I always find the best
                 deals here compared to other sites. It’s my go-to for all my
                 makeup needs.
@@ -146,16 +178,24 @@ const Customer = () => {
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="flex flex-col items-center p-6 bg-white border-8 border-pink-300 shadow-md">
+            <div
+              className="flex flex-col items-center p-6 bg-white border-8 border-pink-300 shadow-md"
+              style={{
+                backgroundImage:
+                  'url("https://i.ibb.co/3d8Y9Zn/Screenshot-96.png")',
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+              }}
+            >
               <img
                 src={Farhan} // Replace with actual image path
                 alt="Customer"
                 className="w-24 h-24 rounded-full object-cover mb-4"
               />
               <h3 className="text-xl font-semibold text-pink-300 mb-2">
-                Fatima Khan
+                Farhan Ahmed
               </h3>
-              <p className="text-gray-700 text-center mb-4">
+              <p className="text-gray-700 font-bold text-center mb-4">
                 The discounts and offers are unbeatable. I always find the best
                 deals here compared to other sites. It’s my go-to for all my
                 makeup needs.
@@ -174,7 +214,15 @@ const Customer = () => {
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="flex flex-col items-center p-6 bg-white border-8 border-pink-300 shadow-md">
+            <div
+              className="flex flex-col items-center p-6 bg-white border-8 border-pink-300 shadow-md"
+              style={{
+                backgroundImage:
+                  'url("https://i.ibb.co/3d8Y9Zn/Screenshot-96.png")',
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+              }}
+            >
               <img
                 src={Zara} // Replace with actual image path
                 alt="Customer"
@@ -183,7 +231,7 @@ const Customer = () => {
               <h3 className="text-xl font-semibold text-pink-300 mb-2">
                 Zara Hossain
               </h3>
-              <p className="text-gray-700 text-center mb-4">
+              <p className="text-gray-700 font-bold text-center mb-4">
                 I appreciate the easy navigation and user-friendly interface of
                 the website. It makes shopping a breeze, even for someone like
                 me who is not very tech-savvy
@@ -201,17 +249,27 @@ const Customer = () => {
               </div>
             </div>
           </SwiperSlide>
-          <SwiperSlide><div className="flex flex-col items-center p-6 bg-white border-8 border-pink-300 shadow-md">
+          <SwiperSlide>
+            <div
+              className="flex flex-col items-center p-6 bg-white border-8 border-pink-300 shadow-md"
+              style={{
+                backgroundImage:
+                  'url("https://i.ibb.co/3d8Y9Zn/Screenshot-96.png")',
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+              }}
+            >
               <img
                 src={Mariam} // Replace with actual image path
                 alt="Customer"
                 className="w-24 h-24 rounded-full object-cover mb-4"
               />
               <h3 className="text-xl font-semibold text-pink-300 mb-2">
-              Mariam Ali
+                Mariam Ali
               </h3>
-              <p className="text-gray-700 text-center mb-4">
-              The detailed product descriptions and honest reviews help me make informed decisions before buying any makeup product.
+              <p className="text-gray-700 font-bold text-center mb-4">
+                The detailed product descriptions and honest reviews help me
+                make informed decisions before buying any makeup product.
               </p>
               <div className="flex space-x-1 text-yellow-500">
                 {[...Array(5)].map((_, index) => (
@@ -224,8 +282,18 @@ const Customer = () => {
                   </svg>
                 ))}
               </div>
-            </div></SwiperSlide>
-          <SwiperSlide><div className="flex flex-col items-center p-6 bg-white border-8 border-pink-300 shadow-md">
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div
+              className="flex flex-col items-center p-6 bg-white border-8 border-pink-300 shadow-md"
+              style={{
+                backgroundImage:
+                  'url("https://i.ibb.co/3d8Y9Zn/Screenshot-96.png")',
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+              }}
+            >
               <img
                 src={Sadia} // Replace with actual image path
                 alt="Customer"
@@ -234,8 +302,10 @@ const Customer = () => {
               <h3 className="text-xl font-semibold text-pink-300 mb-2">
                 Sadia Akhtar
               </h3>
-              <p className="text-gray-700 text-center mb-4">
-              I love the exclusive Bengali brands featured here. It’s great to support local products, and the quality is top-notch.
+              <p className="text-gray-700 font-bold text-center mb-4">
+                I love the exclusive Bengali brands featured here. It’s great to
+                support local products, and the quality is top-notch.Kawai
+                Velvet at his top
               </p>
               <div className="flex space-x-1 text-yellow-500">
                 {[...Array(5)].map((_, index) => (
@@ -248,8 +318,8 @@ const Customer = () => {
                   </svg>
                 ))}
               </div>
-            </div></SwiperSlide>
-          <SwiperSlide>Slide 9</SwiperSlide>
+            </div>
+          </SwiperSlide>
         </Swiper>
       </div>
     </div>
