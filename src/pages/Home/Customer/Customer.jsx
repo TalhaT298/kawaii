@@ -10,6 +10,7 @@ import Razia from "../../../assets/Razia.png";
 import Nafisa from "../../../assets/Nafisa.png";
 import Farhan from "../../../assets/Farhan.png";
 import Fatima from "../../../assets/Fatima.png";
+import Zara from "../../../assets/Zara.png";
 
 const Customer = () => {
   return (
