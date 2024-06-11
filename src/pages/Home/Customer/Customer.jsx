@@ -26,7 +26,7 @@ const Customer = () => {
         className="mySwiper"
       >
         <SwiperSlide>
-            <div className="flex flex-col items-center p-6 bg-white rounded-lg shadow-md">
+            <div className="flex flex-col items-center p-6 bg-pink-300 rounded-lg shadow-md">
               <img
                 src="customer-image.jpg" // Replace with actual image path
                 alt="Customer"
