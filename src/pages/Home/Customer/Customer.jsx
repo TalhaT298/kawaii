@@ -85,17 +85,20 @@ const Customer = () => {
               </div>
             </div>
           </SwiperSlide>
-          <SwiperSlide><div className="flex flex-col items-center p-6 bg-white border-8 border-pink-300 shadow-md">
+          <SwiperSlide>
+            <div className="flex flex-col items-center p-6 bg-white border-8 border-pink-300 shadow-md">
               <img
                 src={Nafisa} // Replace with actual image path
                 alt="Customer"
                 className="w-24 h-24 rounded-full object-cover mb-4"
               />
               <h3 className="text-xl font-semibold text-pink-300 mb-2">
-              Nafisa Islam
+                Nafisa Islam
               </h3>
               <p className="text-gray-700 text-center mb-4">
-              The makeup tutorials and beauty tips available on the site are extremely helpful. They have improved my makeup skills tremendously!
+                The makeup tutorials and beauty tips available on the site are
+                extremely helpful. They have improved my makeup skills
+                tremendously!
               </p>
               <div className="flex space-x-1 text-yellow-500">
                 {[...Array(5)].map((_, index) => (
@@ -108,18 +111,20 @@ const Customer = () => {
                   </svg>
                 ))}
               </div>
-            </div></SwiperSlide>
-          <SwiperSlide><div className="flex flex-col items-center p-6 bg-white border-8 border-pink-300 shadow-md">
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="flex flex-col items-center p-6 bg-white border-8 border-pink-300 shadow-md">
               <img
-                src={Farhan} // Replace with actual image path
+                src={Fatima} // Replace with actual image path
                 alt="Customer"
                 className="w-24 h-24 rounded-full object-cover mb-4"
               />
               <h3 className="text-xl font-semibold text-pink-300 mb-2">
-              Farhan Ahmed
+              Fatima Khan
               </h3>
               <p className="text-gray-700 text-center mb-4">
-              The site’s loyalty program is fantastic! I get rewarded for every purchase, and the points system is very generous.
+              The discounts and offers are unbeatable. I always find the best deals here compared to other sites. It’s my go-to for all my makeup needs.
               </p>
               <div className="flex space-x-1 text-yellow-500">
                 {[...Array(5)].map((_, index) => (
@@ -132,7 +137,8 @@ const Customer = () => {
                   </svg>
                 ))}
               </div>
-            </div></SwiperSlide>
+            </div>
+          </SwiperSlide>
           <SwiperSlide>Slide 5</SwiperSlide>
           <SwiperSlide>Slide 6</SwiperSlide>
           <SwiperSlide>Slide 7</SwiperSlide>
