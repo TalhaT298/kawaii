@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
 import logo from '../../../assets/logo.png'
+import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <div>
@@ -13,9 +14,11 @@ const Navbar = () => {
           <li className="cursor-pointer  rounded-full  px-6 py-2 text-pink-400 font-semibold">
             Home
           </li>
+          <Link to="/services">
           <li className="cursor-pointer  rounded-full px-6 py-2 text-pink-400 font-semibold">
             Services
           </li>
+          </Link>
           <li className="cursor-pointer  rounded-full px-6 py-2 text-pink-400 font-semibold">
             About
           </li>
