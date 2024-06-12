@@ -39,28 +39,28 @@ const Off = () => {
     <div className="flex justify-center item-center ">
       <div className="flex gap-5">
         <div>
-            <p className="font-mono font-bold text-xl">GET EXTRA 25% OFF <br /> <span className="text-sm">FOR ORDER TAKA 2000+</span></p>
+            <p className="font-mono font-bold text-sm text-orange-500">GET EXTRA 25% OFF <br /> <span className="text-xs">FOR ORDER TAKA 2000+</span></p>
         </div>
-        <div>
-          <span className="countdown font-mono text-4xl">
+        <div className="text-orange-500 ">
+          <span className="countdown font-mono text-2xl">
             <span style={{ "--value": timeLeft.days }}></span>
           </span>
           days
         </div>
-        <div>
-          <span className="countdown font-mono text-4xl">
+        <div className="text-orange-500">
+          <span className="countdown font-mono text-2xl">
             <span style={{ "--value": timeLeft.hours }}></span>
           </span>
           hours
         </div>
-        <div>
-          <span className="countdown font-mono text-4xl">
+        <div className="text-orange-500">
+          <span className="countdown font-mono text-2xl">
             <span style={{ "--value": timeLeft.minutes }}></span>
           </span>
           min
         </div>
-        <div>
-          <span className="countdown font-mono text-4xl">
+        <div className="text-orange-500">
+          <span className="countdown font-mono text-2xl">
             <span style={{ "--value": timeLeft.seconds }}></span>
           </span>
           sec
