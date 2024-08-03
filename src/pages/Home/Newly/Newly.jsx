@@ -1,6 +1,9 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
-
+import t1 from "../../../assets/31.png";
+import t2 from "../../../assets/32.png";
+import t3 from "../../../assets/33.png";
+import t4 from "../../../assets/34.png";
 const Newly = () => {
   return (
     <div>
@@ -14,7 +17,7 @@ const Newly = () => {
         
         {/* <!-- Card 1 --> */}
         <div className="bg-white shadow-md rounded-lg overflow-hidden">
-            <img src="https://via.placeholder.com/300" alt="Ankle Brace" className="w-full h-48 object-cover"></img>
+            <img src={t1} alt="Ankle Brace" className="w-full h-48 object-cover"></img>
             <div className="p-4">
                 <h3 className="text-lg font-semibold mb-2">Ankle Brace</h3>
                 <p className="text-blue-600 text-xl font-bold">Price: $11</p>
@@ -24,7 +27,7 @@ const Newly = () => {
         
         {/* <!-- Card 2 --> */}
         <div className="bg-white shadow-md rounded-lg overflow-hidden">
-            <img src="https://via.placeholder.com/300" alt="Urine Bags" className="w-full h-48 object-cover"></img>
+            <img src={t2} alt="Urine Bags" className="w-full h-48 object-cover"></img>
             <div className="p-4">
                 <h3 className="text-lg font-semibold mb-2">Urine Bags</h3>
                 <p className="text-blue-600 text-xl font-bold">Price: $13</p>
@@ -34,7 +37,7 @@ const Newly = () => {
         
         {/* <!-- Card 3 --> */}
         <div className="bg-white shadow-md rounded-lg overflow-hidden">
-            <img src="https://via.placeholder.com/300" alt="LS Belt" className="w-full h-48 object-cover"></img>
+            <img src={t3} alt="LS Belt" className="w-full h-48 object-cover"></img>
             <div className="p-4">
                 <h3 className="text-lg font-semibold mb-2">LS Belt</h3>
                 <p className="text-blue-600 text-xl font-bold">Price: $15</p>
@@ -44,7 +47,7 @@ const Newly = () => {
         
         {/* <!-- Card 4 --> */}
         <div className="bg-white shadow-md rounded-lg overflow-hidden">
-            <img src="https://via.placeholder.com/300" alt="Heat and Cold Therapy" className="w-full h-48 object-cover"></img>
+            <img src={t4} alt="Heat and Cold Therapy" className="w-full h-48 object-cover"></img>
             <div className="p-4">
                 <h3 className="text-lg font-semibold mb-2">Heat and Cold Therapy</h3>
                 <p className="text-blue-600 text-xl font-bold">Price: $10</p>
