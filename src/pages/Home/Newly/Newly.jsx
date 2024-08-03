@@ -19,7 +19,7 @@ const Newly = () => {
         <div className="bg-white shadow-md rounded-lg overflow-hidden">
             <img src={t1} alt="Ankle Brace" className="w-full h-48 object-cover"></img>
             <div className="p-4">
-                <h3 className="text-lg font-semibold mb-2">Ankle Brace</h3>
+                <h3 className="text-lg font-semibold mb-2">Makeup Brush</h3>
                 <p className="text-blue-600 text-xl font-bold">Price: $11</p>
                 <button className="mt-4 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">SHOP</button>
             </div>
@@ -29,7 +29,7 @@ const Newly = () => {
         <div className="bg-white shadow-md rounded-lg overflow-hidden">
             <img src={t2} alt="Urine Bags" className="w-full h-48 object-cover"></img>
             <div className="p-4">
-                <h3 className="text-lg font-semibold mb-2">Urine Bags</h3>
+                <h3 className="text-lg font-semibold mb-2">Eyeliner</h3>
                 <p className="text-blue-600 text-xl font-bold">Price: $13</p>
                 <button className="mt-4 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">SHOP</button>
             </div>
@@ -39,7 +39,7 @@ const Newly = () => {
         <div className="bg-white shadow-md rounded-lg overflow-hidden">
             <img src={t3} alt="LS Belt" className="w-full h-48 object-cover"></img>
             <div className="p-4">
-                <h3 className="text-lg font-semibold mb-2">LS Belt</h3>
+                <h3 className="text-lg font-semibold mb-2">Purse</h3>
                 <p className="text-blue-600 text-xl font-bold">Price: $15</p>
                 <button className="mt-4 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">SHOP</button>
             </div>
@@ -49,7 +49,7 @@ const Newly = () => {
         <div className="bg-white shadow-md rounded-lg overflow-hidden">
             <img src={t4} alt="Heat and Cold Therapy" className="w-full h-48 object-cover"></img>
             <div className="p-4">
-                <h3 className="text-lg font-semibold mb-2">Heat and Cold Therapy</h3>
+                <h3 className="text-lg font-semibold mb-2">Facewash</h3>
                 <p className="text-blue-600 text-xl font-bold">Price: $10</p>
                 <button className="mt-4 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">SHOP</button>
             </div>
