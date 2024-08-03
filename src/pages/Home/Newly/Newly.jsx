@@ -9,73 +9,51 @@ const Newly = () => {
           Newly released Collection!
         </h3>
       </div>
-      <div className="py-4">
-        <div className="flex gap-6 justify-center items-center text-center">
-          <div className="card w-96 bg-base-100 shadow-xl">
-            <figure>
-              <img
-                src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-                alt="Shoes"
-              />
-            </figure>
-            <div className="card-body">
-              <h2 className="card-title">Shoes!</h2>
-              <p>If a dog chews shoes whose shoes does he choose?</p>
-              <div className="card-actions justify-end">
-                <button className="btn btn-primary">Buy Now</button>
-              </div>
+      <div className="max-w-7xl mx-auto p-6">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        {/* <!-- Card 1 --> */}
+        <div className="bg-white shadow-md rounded-lg overflow-hidden">
+            <img src="https://via.placeholder.com/300" alt="Ankle Brace" className="w-full h-48 object-cover"></img>
+            <div className="p-4">
+                <h3 className="text-lg font-semibold mb-2">Ankle Brace</h3>
+                <p className="text-blue-600 text-xl font-bold">Price: $11</p>
+                <button className="mt-4 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">SHOP</button>
             </div>
-          </div>
-          <div className="card w-96 bg-base-100 shadow-xl">
-            <figure>
-              <img
-                src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-                alt="Shoes"
-              />
-            </figure>
-            <div className="card-body">
-              <h2 className="card-title">Shoes!</h2>
-              <p>If a dog chews shoes whose shoes does he choose?</p>
-              <div className="card-actions justify-end">
-                <button className="btn btn-primary">Buy Now</button>
-              </div>
-            </div>
-          </div>
-          <div className="card w-96 bg-base-100 shadow-xl">
-            <figure>
-              <img
-                src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-                alt="Shoes"
-              />
-            </figure>
-            <div className="card-body">
-              <h2 className="card-title">Shoes!</h2>
-              <p>If a dog chews shoes whose shoes does he choose?</p>
-              <div className="card-actions justify-end">
-                <button className="btn btn-primary">Buy Now</button>
-              </div>
-            </div>
-          </div>
-          <div className="card w-96 bg-base-100 shadow-xl">
-            <figure>
-              <img
-                src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-                alt="Shoes"
-              />
-            </figure>
-            <div className="card-body">
-              <h2 className="card-title">Shoes!</h2>
-              <p>If a dog chews shoes whose shoes does he choose?</p>
-              <div className="card-actions justify-end">
-                <button className="btn btn-primary">Buy Now</button>
-              </div>
-            </div>
-          </div>
         </div>
-        <button className="cursor-pointer flex justify-center items-center text-center bg-pink-300 px-6 py-3 text-white font-semibold flex-grow hover:text-pink-400 hover:bg-pink-100 mx-auto">
-          View All
-        </button>
-      </div>
+        
+        {/* <!-- Card 2 --> */}
+        <div className="bg-white shadow-md rounded-lg overflow-hidden">
+            <img src="https://via.placeholder.com/300" alt="Urine Bags" className="w-full h-48 object-cover"></img>
+            <div className="p-4">
+                <h3 className="text-lg font-semibold mb-2">Urine Bags</h3>
+                <p className="text-blue-600 text-xl font-bold">Price: $13</p>
+                <button className="mt-4 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">SHOP</button>
+            </div>
+        </div>
+        
+        {/* <!-- Card 3 --> */}
+        <div className="bg-white shadow-md rounded-lg overflow-hidden">
+            <img src="https://via.placeholder.com/300" alt="LS Belt" className="w-full h-48 object-cover"></img>
+            <div className="p-4">
+                <h3 className="text-lg font-semibold mb-2">LS Belt</h3>
+                <p className="text-blue-600 text-xl font-bold">Price: $15</p>
+                <button className="mt-4 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">SHOP</button>
+            </div>
+        </div>
+        
+        {/* <!-- Card 4 --> */}
+        <div className="bg-white shadow-md rounded-lg overflow-hidden">
+            <img src="https://via.placeholder.com/300" alt="Heat and Cold Therapy" className="w-full h-48 object-cover"></img>
+            <div className="p-4">
+                <h3 className="text-lg font-semibold mb-2">Heat and Cold Therapy</h3>
+                <p className="text-blue-600 text-xl font-bold">Price: $10</p>
+                <button className="mt-4 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">SHOP</button>
+            </div>
+        </div>
+
+    </div>
+</div>
     </div>
   );
 };
