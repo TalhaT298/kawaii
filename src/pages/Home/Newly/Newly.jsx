@@ -16,7 +16,7 @@ const Newly = () => {
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         
         {/* <!-- Card 1 --> */}
-        <div className="bg-white shadow-md rounded-lg overflow-hidden">
+        <div className="bg-rose-200 shadow-md  overflow-hidden">
             <img src={t1} alt="Ankle Brace" className="w-full h-48 object-cover"></img>
             <div className="p-4">
                 <h3 className="text-lg font-semibold mb-2">Makeup Brush</h3>
@@ -26,7 +26,7 @@ const Newly = () => {
         </div>
         
         {/* <!-- Card 2 --> */}
-        <div className="bg-white shadow-md rounded-lg overflow-hidden">
+        <div className="bg-rose-200 shadow-md overflow-hidden">
             <img src={t2} alt="Urine Bags" className="w-full h-48 object-cover"></img>
             <div className="p-4">
                 <h3 className="text-lg font-semibold mb-2">Eyeliner</h3>
@@ -36,7 +36,7 @@ const Newly = () => {
         </div>
         
         {/* <!-- Card 3 --> */}
-        <div className="bg-white shadow-md rounded-lg overflow-hidden">
+        <div className="bg-rose-200 shadow-md  overflow-hidden">
             <img src={t3} alt="LS Belt" className="w-full h-48 object-cover"></img>
             <div className="p-4">
                 <h3 className="text-lg font-semibold mb-2">Purse</h3>
@@ -46,7 +46,7 @@ const Newly = () => {
         </div>
         
         {/* <!-- Card 4 --> */}
-        <div className="bg-white shadow-md rounded-lg overflow-hidden">
+        <div className="bg-rose-200 shadow-md  overflow-hidden">
             <img src={t4} alt="Heat and Cold Therapy" className="w-full h-48 object-cover"></img>
             <div className="p-4">
                 <h3 className="text-lg font-semibold mb-2">Facewash</h3>
