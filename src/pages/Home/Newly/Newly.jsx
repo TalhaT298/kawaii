@@ -19,8 +19,8 @@ const Newly = () => {
         <div className="bg-rose-200 shadow-md  overflow-hidden">
             <img src={t1} alt="Ankle Brace" className="w-full h-48 object-cover"></img>
             <div className="p-4">
-                <h3 className="text-lg font-semibold mb-2">Makeup Brush</h3>
-                <p className="text-blue-600 text-xl font-bold">Price: $11</p>
+                <h3 className="text-xl text-pink-400 font-semibold mb-2">Makeup Brush</h3>
+                <p className="text-pink-400 text-sm font-bold">Price: $11</p>
                 <button className="mt-4 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">SHOP</button>
             </div>
         </div>
@@ -29,8 +29,8 @@ const Newly = () => {
         <div className="bg-rose-200 shadow-md overflow-hidden">
             <img src={t2} alt="Urine Bags" className="w-full h-48 object-cover"></img>
             <div className="p-4">
-                <h3 className="text-lg font-semibold mb-2">Eyeliner</h3>
-                <p className="text-blue-600 text-xl font-bold">Price: $13</p>
+                <h3 className="text-xl text-pink-400 font-semibold mb-2">Eyeliner</h3>
+                <p className="text-pink-400 text-sm font-bold">Price: $13</p>
                 <button className="mt-4 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">SHOP</button>
             </div>
         </div>
@@ -39,18 +39,18 @@ const Newly = () => {
         <div className="bg-rose-200 shadow-md  overflow-hidden">
             <img src={t3} alt="LS Belt" className="w-full h-48 object-cover"></img>
             <div className="p-4">
-                <h3 className="text-lg font-semibold mb-2">Purse</h3>
-                <p className="text-blue-600 text-xl font-bold">Price: $15</p>
+                <h3 className="text-xl text-pink-400 font-semibold mb-2">Purse</h3>
+                <p className="text-pink-400 text-sm font-bold">Price: $15</p>
                 <button className="mt-4 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">SHOP</button>
             </div>
         </div>
         
         {/* <!-- Card 4 --> */}
-        <div className="bg-rose-200 shadow-md  overflow-hidden">
+        <div className="bg-rose-200 shadow-md overflow-hidden">
             <img src={t4} alt="Heat and Cold Therapy" className="w-full h-48 object-cover"></img>
             <div className="p-4">
-                <h3 className="text-lg font-semibold mb-2">Facewash</h3>
-                <p className="text-blue-600 text-xl font-bold">Price: $10</p>
+                <h3 className="text-xl text-pink-400 font-semibold mb-2">Facewash</h3>
+                <p className="text-pink-400 text-sm font-bold">Price: $10</p>
                 <button className="mt-4 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">SHOP</button>
             </div>
         </div>
