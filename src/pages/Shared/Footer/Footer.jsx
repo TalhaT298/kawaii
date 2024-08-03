@@ -11,7 +11,7 @@ const Footer = () => {
         <aside>
           <div>
             <img src={logo} className="h-10" alt="" />
-            <p>Your one stop shop for your shop needs!</p>
+            <p className="text-white">Your one stop shop for your shop needs!</p>
             <div className="flex">
               <Link>
                 <a
@@ -20,7 +20,7 @@ const Footer = () => {
                   href="https://www.facebook.com/talha.tarique.5"
                   className=" "
                 >
-                  <GrFacebookOption size="1.7rem" color="black" />
+                  <GrFacebookOption size="1.7rem" color="white" />
                 </a>
               </Link>
               <Link>
@@ -30,27 +30,27 @@ const Footer = () => {
                   href="https://www.instagram.com/talha_tarique77/"
                   className=" "
                 >
-                  <IoLogoInstagram size="1.7rem" color="black" />
+                  <IoLogoInstagram size="1.7rem" color="white" />
                 </a>
               </Link>
             </div>
           </div>
         </aside>
-        <nav>
+        <nav className="text-white font-bold">
           <h6 className="footer-title">Services</h6>
           <a className="link link-hover">Branding</a>
           <a className="link link-hover">Design</a>
           <a className="link link-hover">Marketing</a>
           <a className="link link-hover">Advertisement</a>
         </nav>
-        <nav>
+        <nav className="text-white font-bold">
           <h6 className="footer-title">Company</h6>
           <a className="link link-hover">About us</a>
           <a className="link link-hover">Contact</a>
           <a className="link link-hover">Job</a>
           <a className="link link-hover">Press kit</a>
         </nav>
-        <nav>
+        <nav className="text-white font-bold">
           <h6 className="footer-title">Legal</h6>
           <a className="link link-hover">Terms of use</a>
           <a className="link link-hover">Privacy policy</a>
@@ -58,7 +58,7 @@ const Footer = () => {
         </nav>
         
       </footer>
-      <p className="bg-pink-300 text-center font-sans">Copyright ©2022 All right reserved by Kawai Velvet</p>
+      <p className="bg-pink-300 text-center font-sans pb-2 text-white">Copyright ©2022 All right reserved by Kawai Velvet</p>
     </div>
   );
 };
