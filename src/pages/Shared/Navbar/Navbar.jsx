@@ -4,6 +4,7 @@ import logo from '../../../assets/logo.png';
 import text from '../../../assets/text.png';
 import { Link } from "react-router-dom";
 import { IoCall } from "react-icons/io5";
+import { motion } from "framer-motion";
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
