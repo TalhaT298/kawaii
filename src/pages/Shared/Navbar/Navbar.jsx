@@ -4,7 +4,7 @@ import logo from '../../../assets/logo.png';
 import text from '../../../assets/text.png';
 import { Link } from "react-router-dom";
 import { IoCall } from "react-icons/io5";
-import { motion } from "framer-motion";
+import './Navbar.css';
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -59,8 +59,8 @@ const Navbar = () => {
         </ul>
         <div className="hidden md:flex items-center">
           <li className="cursor-pointer flex gap-1 list-none rounded-full px-6 py-2 text-white">
-          <IoCall  className="w-8 h-6 text-pink-300"/>
-           <span className="text-pink-300  font-semibold">Contact</span>
+          <IoCall  className="w-8 h-6 ring icon text-pink-300"/>
+           <span className="text-pink-400  font-semibold">Contact</span>
           </li>
         </div>
       </nav>

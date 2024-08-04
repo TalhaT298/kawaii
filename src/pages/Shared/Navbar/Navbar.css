@@ -1,0 +1,22 @@
+@keyframes ring {
+  0% { transform: translateX(0); }
+  10% { transform: translateX(-10px); }
+  20% { transform: translateX(10px); }
+  30% { transform: translateX(-10px); }
+  40% { transform: translateX(10px); }
+  50% { transform: translateX(0); }
+  100% { transform: translateX(0); }
+}
+
+.ring {
+  animation: ring 1s ease-in-out infinite;
+  animation-delay: 2s;
+}
+.icon {
+    border: none;
+    background: none;
+    box-shadow: none;
+    outline: none;
+    display: inline-block; /* Ensure it displays correctly */
+    /* Add any additional styles you need here */
+  }
