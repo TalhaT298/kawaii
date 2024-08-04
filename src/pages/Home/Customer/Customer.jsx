@@ -331,30 +331,52 @@
 // export default Customer;
 
 
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
 const Customer = () => {
+  const [showFirst, setShowFirst] = useState(true);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setShowFirst((prevShowFirst) => !prevShowFirst);
+    }, 5000);
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <div>
-      <div className="mx-auto flex justify-center items-center ">
+      <div className="mx-auto flex justify-center items-center">
         <h3 className="text-3xl text-gray-50 uppercase bg-pink-300 w-full h-24 flex justify-center items-center text-center font-bold font-serif">
           Client Feedback
         </h3>
       </div>
       <div className="flex items-center justify-center bg-gray-100">
-    <div className="max-w-4xl p-8 bg-white rounded-lg shadow-md">
-        <p className="text-xl italic font-light text-gray-800 mb-4">
+        <div className={`max-w-4xl p-8 bg-white rounded-lg shadow-md ${showFirst ? '' : 'hidden'}`}>
+          <p className="text-xl italic font-light text-gray-800 mb-4">
             "I recently used this website for a purchase and I was extremely satisfied with the ease of use and the variety of options available. The checkout process was seamless and the delivery was prompt"
-        </p>
-        <div className="flex items-center">
+          </p>
+          <div className="flex items-center">
             <img className="w-10 h-10 rounded-full" src="https://via.placeholder.com/40" alt="Jane Doe"></img>
             <div className="ml-4">
-                <p className="text-sm font-semibold text-gray-700">Jane Doe</p>
-                <p className="text-sm text-gray-500">Founder of XYZ</p>
+              <p className="text-sm font-semibold text-gray-700">Jane Doe</p>
+              <p className="text-sm text-gray-500">Founder of XYZ</p>
             </div>
+          </div>
         </div>
-    </div>
-</div>
+        <div className={`max-w-4xl p-8 bg-white rounded-lg shadow-md ${showFirst ? 'hidden' : ''}`}>
+          <p className="text-xl italic font-light text-gray-800 mb-4">
+            "I recently used this website for a purchase and I was extremely satisfied with the ease of use and the variety of options available. The checkout process was seamless and the delivery was prompt"
+          </p>
+          <div className="flex items-center">
+            <img className="w-10 h-10 rounded-full" src="https://via.placeholder.com/40" alt="Jane Doe"></img>
+            <div className="ml-4">
+              <p className="text-sm font-semibold text-gray-700">Jane Doe</p>
+              <p className="text-sm text-gray-500">Founder of XZ</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
