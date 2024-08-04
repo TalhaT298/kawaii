@@ -332,7 +332,9 @@
 
 
 import React, { useState, useEffect } from 'react';
-
+import j1 from "../../../assets/101.png";
+import j2 from "../../../assets/102.png";
+import j3 from "../../../assets/103.png";
 const Customer = () => {
   const [currentPhase, setCurrentPhase] = useState(1);
 
@@ -352,36 +354,36 @@ const Customer = () => {
         </h3>
       </div>
       <div className="flex items-center justify-center bg-gray-100 py-10">
-        <div className={`max-w-4xl p-8 bg-white rounded-lg shadow-md ${currentPhase === 1 ? '' : 'hidden'}`}>
-          <p className="text-xl italic font-light text-gray-800 mb-4">
+        <div className={`max-w-4xl p-8   rounded-lg   ${currentPhase === 1 ? '' : 'hidden'}`}>
+          <p className="text-xl italic font-light text-black mb-4">
             "I love the variety and quality of the products at Kawaivelvet. The customer service is exceptional. I highly recommend it to anyone looking for great makeup and girl items"
           </p>
           <div className="flex items-center">
-            <img className="w-10 h-10 rounded-full" src="https://via.placeholder.com/40" alt="Jane Doe"></img>
+            <img className="w-12 h-12 rounded-full" src={j1} alt="Jane Doe"></img>
             <div className="ml-4">
               <p className="text-sm font-semibold text-gray-700">Emily Johnson</p>
               <p className="text-sm text-gray-500">Founder of Glamour & Glow</p>
             </div>
           </div>
         </div>
-        <div className={`max-w-4xl p-8 bg-white rounded-lg shadow-md ${currentPhase === 2 ? '' : 'hidden'}`}>
+        <div className={`max-w-4xl p-8   rounded-lg  ${currentPhase === 2 ? '' : 'hidden'}`}>
           <p className="text-xl italic font-light text-gray-800 mb-4">
             "Kawaivelvet offers a fantastic shopping experience with top-notch products and excellent customer support. It's my go-to place for all my beauty needs"
           </p>
           <div className="flex items-center">
-            <img className="w-10 h-10 rounded-full" src="https://via.placeholder.com/40" alt="Jane Doe"></img>
+            <img className="w-12 h-12 rounded-full" src={j2} alt="Jane Doe"></img>
             <div className="ml-4">
               <p className="text-sm font-semibold text-gray-700">Sarah Williams</p>
               <p className="text-sm text-gray-500">Beauty Blogger at Beauty Bliss</p>
             </div>
           </div>
         </div>
-        <div className={`max-w-4xl p-8 bg-white rounded-lg shadow-md ${currentPhase === 3 ? '' : 'hidden'}`}>
+        <div className={`max-w-4xl p-8   rounded-lg   ${currentPhase === 3 ? '' : 'hidden'}`}>
           <p className="text-xl italic font-light text-gray-800 mb-4">
             "Kawaivelvet never fails to impress with its amazing selection of products and outstanding customer service. I can't recommend it enough!"
           </p>
           <div className="flex items-center">
-            <img className="w-10 h-10 rounded-full" src="https://via.placeholder.com/40" alt="John Smith"></img>
+            <img className="w-12 h-12 rounded-full" src={j3} alt="John Smith"></img>
             <div className="ml-4">
               <p className="text-sm font-semibold text-gray-700">Lisa Brown</p>
               <p className="text-sm text-gray-500">Makeup Artist and Beauty Consultant</p>
