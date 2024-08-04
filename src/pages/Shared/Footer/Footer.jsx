@@ -3,6 +3,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { GrFacebookOption } from "react-icons/gr";
 import { IoLogoInstagram } from "react-icons/io";
+import { FaPinterest } from "react-icons/fa";
 import logo from "../../../assets/logo.png"
 const Footer = () => {
   return (
@@ -12,7 +13,7 @@ const Footer = () => {
           <div>
             <img src={logo} className="h-10" alt="" />
             <p className="text-white">Your one stop shop for your shop needs!</p>
-            <div className="flex">
+            <div className="flex gap-2">
               <Link>
                 <a
                   target="_blank"
@@ -31,6 +32,16 @@ const Footer = () => {
                   className=" "
                 >
                   <IoLogoInstagram size="1.7rem" color="white" />
+                </a>
+              </Link>
+              <Link>
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://www.instagram.com/talha_tarique77/"
+                  className=" "
+                >
+                  <FaPinterest size="1.7rem" color="white" />
                 </a>
               </Link>
             </div>
