@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { GrFacebookOption } from "react-icons/gr";
 import { IoLogoInstagram } from "react-icons/io";
 import { FaPinterest } from "react-icons/fa";
-import logo from "../../../assets/logo.png"
+import logo from "../../../assets/logo3.png"
 const Footer = () => {
   return (
     <div>
@@ -12,8 +12,8 @@ const Footer = () => {
         <aside>
           <div>
             <img src={logo} className="h-10" alt="" />
-            <p className="text-white">Your one stop shop for your shop needs!</p>
-            <div className="flex gap-2">
+            <p className="text-white pt-3 font-bold">Your one stop shop for your shop needs!</p>
+            <div className="flex gap-2 py-4">
               <Link>
                 <a
                   target="_blank"
