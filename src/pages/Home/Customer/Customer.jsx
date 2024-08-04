@@ -334,11 +334,11 @@
 import React, { useState, useEffect } from 'react';
 
 const Customer = () => {
-  const [showFirst, setShowFirst] = useState(true);
+  const [currentPhase, setCurrentPhase] = useState(1);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setShowFirst((prevShowFirst) => !prevShowFirst);
+      setCurrentPhase((prevPhase) => (prevPhase % 3) + 1); // Cycles through 1, 2, 3
     }, 5000);
 
     return () => clearInterval(interval);
@@ -352,7 +352,7 @@ const Customer = () => {
         </h3>
       </div>
       <div className="flex items-center justify-center bg-gray-100">
-        <div className={`max-w-4xl p-8 bg-white rounded-lg shadow-md ${showFirst ? '' : 'hidden'}`}>
+        <div className={`max-w-4xl p-8 bg-white rounded-lg shadow-md ${currentPhase === 1 ? '' : 'hidden'}`}>
           <p className="text-xl italic font-light text-gray-800 mb-4">
             "I recently used this website for a purchase and I was extremely satisfied with the ease of use and the variety of options available. The checkout process was seamless and the delivery was prompt"
           </p>
@@ -364,7 +364,7 @@ const Customer = () => {
             </div>
           </div>
         </div>
-        <div className={`max-w-4xl p-8 bg-white rounded-lg shadow-md ${showFirst ? 'hidden' : ''}`}>
+        <div className={`max-w-4xl p-8 bg-white rounded-lg shadow-md ${currentPhase === 2 ? '' : 'hidden'}`}>
           <p className="text-xl italic font-light text-gray-800 mb-4">
             "I recently used this website for a purchase and I was extremely satisfied with the ease of use and the variety of options available. The checkout process was seamless and the delivery was prompt"
           </p>
@@ -376,9 +376,22 @@ const Customer = () => {
             </div>
           </div>
         </div>
+        <div className={`max-w-4xl p-8 bg-white rounded-lg shadow-md ${currentPhase === 3 ? '' : 'hidden'}`}>
+          <p className="text-xl italic font-light text-gray-800 mb-4">
+            "I have been thoroughly impressed by the customer service and the quality of the products offered. Highly recommend to others!"
+          </p>
+          <div className="flex items-center">
+            <img className="w-10 h-10 rounded-full" src="https://via.placeholder.com/40" alt="John Smith"></img>
+            <div className="ml-4">
+              <p className="text-sm font-semibold text-gray-700">John Smith</p>
+              <p className="text-sm text-gray-500">CEO of ABC Corp</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
 };
 
 export default Customer;
+
