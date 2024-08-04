@@ -19,9 +19,9 @@ const Newly = () => {
         <div className="bg-rose-200 shadow-md  overflow-hidden">
             <img src={t1} alt="Ankle Brace" className="w-full h-48 object-cover"></img>
             <div className="p-4">
-                <h3 className="text-xl text-pink-400 font-semibold mb-2">Makeup Brush</h3>
-                <p className="text-pink-400 text-sm font-bold">Price: $11</p>
-                <button className="mt-4 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">SHOP</button>
+                <h3 className="text-xl text-pink-400 font-bold mb-2">Makeup Brush</h3>
+                <p className="text-pink-400 text-sm font-bold">$11</p>
+                <button className="mt-4 bg-white text-pink-400 px-8 font-bold py-2 hover:bg-pink-300 hover:text-white">SHOP</button>
             </div>
         </div>
         
@@ -29,9 +29,9 @@ const Newly = () => {
         <div className="bg-rose-200 shadow-md overflow-hidden">
             <img src={t2} alt="Urine Bags" className="w-full h-48 object-cover"></img>
             <div className="p-4">
-                <h3 className="text-xl text-pink-400 font-semibold mb-2">Eyeliner</h3>
-                <p className="text-pink-400 text-sm font-bold">Price: $13</p>
-                <button className="mt-4 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">SHOP</button>
+                <h3 className="text-xl text-pink-400 font-bold mb-2">Eyeliner</h3>
+                <p className="text-pink-400 text-sm font-bold">$13</p>
+                <button className="mt-4 bg-white text-pink-400 px-8 font-bold py-2 hover:bg-pink-300 hover:text-white">SHOP</button>
             </div>
         </div>
         
@@ -39,9 +39,9 @@ const Newly = () => {
         <div className="bg-rose-200 shadow-md  overflow-hidden">
             <img src={t3} alt="LS Belt" className="w-full h-48 object-cover"></img>
             <div className="p-4">
-                <h3 className="text-xl text-pink-400 font-semibold mb-2">Purse</h3>
-                <p className="text-pink-400 text-sm font-bold">Price: $15</p>
-                <button className="mt-4 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">SHOP</button>
+                <h3 className="text-xl text-pink-400 font-bold mb-2">Purse</h3>
+                <p className="text-pink-400 text-sm font-bold">$15</p>
+                <button className="mt-4 bg-white text-pink-400 px-8 font-bold py-2 hover:bg-pink-300 hover:text-white">SHOP</button>
             </div>
         </div>
         
@@ -49,9 +49,9 @@ const Newly = () => {
         <div className="bg-rose-200 shadow-md overflow-hidden">
             <img src={t4} alt="Heat and Cold Therapy" className="w-full h-48 object-cover"></img>
             <div className="p-4">
-                <h3 className="text-xl text-pink-400 font-semibold mb-2">Facewash</h3>
-                <p className="text-pink-400 text-sm font-bold">Price: $10</p>
-                <button className="mt-4 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">SHOP</button>
+                <h3 className="text-xl text-pink-400 font-bold mb-2">Facewash</h3>
+                <p className="text-pink-400 text-sm font-bold">$10</p>
+                <button className="mt-4 bg-white text-pink-400 px-8 font-bold py-2 hover:bg-pink-300 hover:text-white">SHOP</button>
             </div>
         </div>
 
