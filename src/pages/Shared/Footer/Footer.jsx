@@ -76,22 +76,36 @@ import logo from "../../../assets/logo3.png";
 // export default Footer;
 
 import React from "react";
-
+import { FaArrowTurnUp } from "react-icons/fa6";
 const Footer = () => {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
   return (
     <div>
       <footer className="footer footer-center bg-pink-300 text-base-content rounded p-10">
         <img src={logo} className="h-16" alt="" />
-         
-          <nav className="grid grid-flow-col gap-4 text-white text-xl font-semibold">
-            <a className="link link-hover">About</a>
-            <a className="link link-hover">News</a>
-            <a className="link link-hover">Cosmetics</a>
-            <a className="link link-hover">Pricing</a>
-            <a className="link link-hover">Gallery</a>
-            <a className="link link-hover">Contacts</a>
-          </nav>
-         
+
+        <nav className="grid grid-flow-col gap-4 text-white text-xl font-semibold">
+          <a className="link link-hover">About</a>
+          <a className="link link-hover">News</a>
+          <a className="link link-hover">Cosmetics</a>
+          <a className="link link-hover">Pricing</a>
+          <a className="link link-hover">Gallery</a>
+          <a className="link link-hover">Contacts</a>
+          <a
+            onClick={scrollToTop}
+            className=""
+          >
+            <Link to={"/"} rel="noopener noreferrer">
+              Go Top <FaArrowTurnUp className="inline-block text-white" />
+            </Link>
+          </a>
+        </nav>
+
         <nav>
           <div className="grid grid-flow-col gap-4">
             <div className="flex gap-4 py-">
@@ -128,7 +142,6 @@ const Footer = () => {
             </div>
           </div>
         </nav>
-        
       </footer>
     </div>
   );
