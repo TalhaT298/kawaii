@@ -7,7 +7,7 @@ const Login = () => {
         <>
            <Link to="/login"></Link>
            <div>
-            
+            <button>Go to Login</button>
             </div> 
         </>
     );
