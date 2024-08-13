@@ -53,9 +53,11 @@ const Navbar = () => {
           <li className="cursor-pointer rounded-full px-6 py-2 text-pink-400 font-semibold">
             Shop
           </li>
+          <Link to="/login">
           <li className="cursor-pointer bg-pink-300 px-6 py-3 text-white font-semibold flex-grow hover:text-pink-400 hover:bg-pink-100">
-            Collection
+            Login
           </li>
+          </Link>
         </ul>
         <div className="hidden md:flex items-center">
           <li className="cursor-pointer flex gap-1 list-none rounded-full px-6 py-2 text-white">
