@@ -17,7 +17,7 @@ const Login = () => {
         <>
            <Link to="/login"></Link>
            <div>
-            <button onClick={handleGoogleSignIn}>G to Login</button>
+            <button onClick={handleGoogleSignIn}>Gto Login</button>
             </div> 
         </>
     );
