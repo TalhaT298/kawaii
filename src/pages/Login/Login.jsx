@@ -12,8 +12,13 @@ const Login = () => {
 
     const handleGoogleSignIn = () =>{
        signInWithPopup(auth,provider)
-       .then(result =>{})
-       .cath()
+       .then(result =>{
+        const user= result.user;
+        console.log(user);
+       })
+       .cath(error =>{
+        console.log('error',error.message)
+       })
     }
     return (
         <>
