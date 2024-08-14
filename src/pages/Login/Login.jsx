@@ -1,9 +1,9 @@
 /* eslint-disable no-unused-vars */
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { getAuth } from "firebase/auth";
+import { getAuth, GoogleAuthProvider, signInWithPopup } from "firebase/auth";
 import app from '../../firebase/firebase.init';
-import { GoogleAuthProvider } from 'firebase/auth/web-extension';
+
 
 
 const Login = () => {
@@ -11,7 +11,7 @@ const Login = () => {
     const provider = new GoogleAuthProvider();
 
     const handleGoogleSignIn = () =>{
-        console.log('Google is coming')
+       signInWithPopup
     }
     return (
         <>
