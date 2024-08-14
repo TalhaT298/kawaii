@@ -11,7 +11,9 @@ const Login = () => {
     const provider = new GoogleAuthProvider();
 
     const handleGoogleSignIn = () =>{
-       signInWithPopup
+       signInWithPopup(auth,provider)
+       .then(result =>{})
+       .cath()
     }
     return (
         <>
