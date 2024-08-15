@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { getAuth, GoogleAuthProvider, signInWithPopup } from "firebase/auth";
 import app from '../../firebase/firebase.init';
@@ -7,6 +7,7 @@ import app from '../../firebase/firebase.init';
 
 
 const Login = () => {
+    const [user,setUser]=useState(null);
     const auth = getAuth(app);
     const provider = new GoogleAuthProvider();
 
@@ -24,7 +25,7 @@ const Login = () => {
         <>
            <Link to="/login"></Link>
            <div>
-            <button onClick={handleGoogleSignIn}>Gto Login</button>
+            <button onClick={handleGoogleSignIn}>Gt Login</button>
             </div> 
         </>
     );
