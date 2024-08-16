@@ -44,6 +44,8 @@ const Register = () => {
         const password=e.target.password.value;
         console.log(email,password);
         setRegisterError('');
+        setSuccess('');
+        //creeate user
         createUserWithEmailAndPassword(auth,email,password)
         .then(result =>{
             console.log(result.user);
