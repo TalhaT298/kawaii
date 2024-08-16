@@ -43,8 +43,15 @@ const Register = () => {
         const email = e.target.email.value;
         const password=e.target.password.value;
         console.log(email,password);
+        //reset error
         setRegisterError('');
         setSuccess('');
+        if(password.length<6){
+            setRegisterError('Password should be at least 6 chatacter or long');
+            return;
+        }
+
+        
         //creeate user
         createUserWithEmailAndPassword(auth,email,password)
         .then(result =>{
