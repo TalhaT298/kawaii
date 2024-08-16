@@ -67,7 +67,7 @@ const Login = () => {
   };
 
   const handleForgetPassword = e =>{
-    console.log('send rest mail');
+    console.log('send rest mail',emailRef.current.value);
   }
   return (
     <div>
@@ -91,6 +91,7 @@ const Login = () => {
                 <input
                   type="email"
                   name="email"  // Added name attribute
+                  ref={emailRef}
                   placeholder="email"
                   className="input input-bordered"
                   required
