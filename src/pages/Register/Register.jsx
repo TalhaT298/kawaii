@@ -51,6 +51,10 @@ const Register = () => {
             return;
         }
 
+        else if(!/[A-Z]/.test(password)){
+          setRegisterError('Your password should have list one uppare case characteer');
+          return;
+        }
         
         //creeate user
         createUserWithEmailAndPassword(auth,email,password)
