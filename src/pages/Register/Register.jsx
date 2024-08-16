@@ -30,12 +30,13 @@
 
 // export default Register;
 import { createUserWithEmailAndPassword } from "firebase/auth";
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import auth from "../../firebase/firebase.init";
 
 
 const Register = () => {
+    const [registerError, setRegisterError]=useState('');
     const handleRegister = e =>{
         e.preventDefault();
         const email = e.target.email.value;
@@ -46,7 +47,8 @@ const Register = () => {
             console.log(result.user);
         })
         .catch(error=>{
-            console.error(error)
+            console.error(error);
+            setRegisterError(error.message);
         });
         
     }
@@ -98,6 +100,9 @@ const Register = () => {
                 <button className="btn btn-primary">Login</button>
               </div>
             </form>
+            {
+                registerError && <p className="text-red-900">{registerError}</p>
+            }
           </div>
         </div>
       </div>
