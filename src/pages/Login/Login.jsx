@@ -49,10 +49,16 @@ const Login = () => {
     const password = e.target.password.value;
 
     console.log(email, password);
+
+    //reset error
+    setRegisterError('');
+    setSuccess('');
+    
     //add validaton
     signInWithEmailAndPassword(auth,email,password)
     .then(result=>{
-        console.log(result.user)
+        console.log(result.user);
+        setSuccess('User Login Successfully');
     })
     .catch(error=>{
         console.error(error);

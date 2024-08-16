@@ -49,6 +49,7 @@ const Register = () => {
         //reset error
         setRegisterError('');
         setSuccess('');
+        
         if(password.length<6){
             setRegisterError('Password should be at least 6 chatacter or long');
             return;
