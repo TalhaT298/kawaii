@@ -34,14 +34,14 @@
 // export default Login;
 
 import { signInWithEmailAndPassword } from "firebase/auth";
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import auth from "../../firebase/firebase.init";
 
 const Login = () => {
     const [registerError, setRegisterError]=useState('');
     const [success,setSuccess]=useState('');
-
+    const emailRef=useRef(null);
 
   const handleLogin = (e) => {
     e.preventDefault();
@@ -66,6 +66,9 @@ const Login = () => {
     });
   };
 
+  const handleForgetPassword = e =>{
+    console.log('send rest mail');
+  }
   return (
     <div>
       <Link to="/login"></Link>
@@ -105,7 +108,7 @@ const Login = () => {
                   required
                 />
                 <label className="label">
-                  <a href="#" className="label-text-alt link link-hover">
+                  <a onClick={handleForgetPassword} href="#" className="label-text-alt link link-hover">
                     Forgot password?
                   </a>
                 </label>
