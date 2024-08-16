@@ -34,11 +34,15 @@
 // export default Login;
 
 import { signInWithEmailAndPassword } from "firebase/auth";
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import auth from "../../firebase/firebase.init";
 
 const Login = () => {
+    const [registerError, setRegisterError]=useState('');
+    const [success,setSuccess]=useState('');
+
+
   const handleLogin = (e) => {
     e.preventDefault();
     const email = e.target.email.value;
@@ -50,7 +54,10 @@ const Login = () => {
     .then(result=>{
         console.log(result.user)
     })
-    .catch(error=>console.error(error))
+    .catch(error=>{
+        console.error(error);
+        setRegisterError(error.message);
+    });
   };
 
   return (
@@ -101,6 +108,12 @@ const Login = () => {
                 <button className="btn btn-primary">Login</button>
               </div>
             </form>
+            {
+                registerError && <p className="text-red-900">{registerError}</p>
+            }
+            {
+                success && <p className="text-green-800">{success}</p>
+            }
           </div>
         </div>
       </div>
