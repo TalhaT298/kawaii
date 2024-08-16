@@ -55,7 +55,12 @@ const Register = () => {
         }
 
         else if(!/[A-Z]/.test(password)){
-          setRegisterError('Your password should have list one uppare case characteer');
+          setRegisterError('Your password should have list one uppare case characteer')
+          return;
+        }
+
+        else if(!accepted){
+          setRegisterError('Please accept our terms and conditions')
           return;
         }
         
