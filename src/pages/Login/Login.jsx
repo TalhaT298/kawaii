@@ -33,8 +33,10 @@
 
 // export default Login;
 
+import { signInWithEmailAndPassword } from "firebase/auth";
 import React from "react";
 import { Link } from "react-router-dom";
+import auth from "../../firebase/firebase.init";
 
 const Login = () => {
   const handleLogin = (e) => {
@@ -43,6 +45,12 @@ const Login = () => {
     const password = e.target.password.value;
 
     console.log(email, password);
+    //add validaton
+    signInWithEmailAndPassword(auth,email,password)
+    .then(result=>{
+        console.log(result.user)
+    })
+    .catch(error=>console.error(error))
   };
 
   return (
