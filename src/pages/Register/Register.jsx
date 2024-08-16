@@ -33,8 +33,8 @@ import { createUserWithEmailAndPassword } from "firebase/auth";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import auth from "../../firebase/firebase.init";
-
-
+import { IoIosEye } from "react-icons/io";
+import { IoEyeOff } from "react-icons/io5";
 const Register = () => {
     const [registerError, setRegisterError]=useState('');
     const [success,setSuccess]=useState('');
@@ -101,6 +101,7 @@ const Register = () => {
                 <label className="label">
                   <span className="label-text">Password</span>
                 </label>
+                <div className="relative">
                 <input
                   type={showPassword? "text":"password"}
                   placeholder="password"
@@ -108,7 +109,16 @@ const Register = () => {
                   name="password"
                   required
                 />
-                <span className="" onClick={()=> setShowPassword(!showPassword)}>Show</span>
+                <span className="absolute top-3 right-2" onClick={()=> setShowPassword(!showPassword)}>
+
+                  {
+                    showPassword? <IoIosEye /> : <IoEyeOff />
+                  }
+                </span>
+                <br />
+                <input type="checkbox" name="terms" id="terms"/>
+                <label htmlFor="terms"></label>
+                </div>
                 <label className="label">
                   <a href="#" className="label-text-alt link link-hover">
                     Forgot password?
