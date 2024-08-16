@@ -44,7 +44,8 @@ const Register = () => {
         e.preventDefault();
         const email = e.target.email.value;
         const password=e.target.password.value;
-        console.log(email,password);
+        const accepted = e.target.terms.checked;
+        console.log(email,password,accepted);
         //reset error
         setRegisterError('');
         setSuccess('');
@@ -116,8 +117,10 @@ const Register = () => {
                   }
                 </span>
                 <br />
+                <div className="mb-2">
                 <input type="checkbox" name="terms" id="terms"/>
-                <label htmlFor="terms">Accept our Terms and Conditions</label>
+                <label className="ml-2" htmlFor="terms">Accept our Terms and Conditions</label>
+                </div>
                 </div>
                 <label className="label">
                   <a href="#" className="label-text-alt link link-hover">
