@@ -117,7 +117,7 @@ const Register = () => {
                 </span>
                 <br />
                 <input type="checkbox" name="terms" id="terms"/>
-                <label htmlFor="terms"></label>
+                <label htmlFor="terms">Accept our Terms and Conditions</label>
                 </div>
                 <label className="label">
                   <a href="#" className="label-text-alt link link-hover">
