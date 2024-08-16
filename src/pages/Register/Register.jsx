@@ -38,6 +38,8 @@ import auth from "../../firebase/firebase.init";
 const Register = () => {
     const [registerError, setRegisterError]=useState('');
     const [success,setSuccess]=useState('');
+    const [showPassword,setShowPassword]=useState(false);
+
     const handleRegister = e =>{
         e.preventDefault();
         const email = e.target.email.value;
@@ -100,12 +102,13 @@ const Register = () => {
                   <span className="label-text">Password</span>
                 </label>
                 <input
-                  type="password"
+                  type={showPassword? "text":"password"}
                   placeholder="password"
                   className="input input-bordered"
                   name="password"
                   required
                 />
+                <span className="" onClick={()=> setShowPassword(!showPassword)}>Show</span>
                 <label className="label">
                   <a href="#" className="label-text-alt link link-hover">
                     Forgot password?
