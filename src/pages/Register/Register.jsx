@@ -29,8 +29,11 @@
 // };
 
 // export default Register;
+import { createUserWithEmailAndPassword } from "firebase/auth";
 import React from "react";
 import { Link } from "react-router-dom";
+import auth from "../../firebase/firebase.init";
+
 
 const Register = () => {
     const handleRegister = e =>{
@@ -38,7 +41,7 @@ const Register = () => {
         const email = e.target.email.value;
         const password=e.target.password.value;
         console.log(email,password);
-        console.log('from submit')
+        createUserWithEmailAndPassword(auth,email,password)
     }
   return (
     <div>
