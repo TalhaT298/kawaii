@@ -37,14 +37,17 @@ import auth from "../../firebase/firebase.init";
 
 const Register = () => {
     const [registerError, setRegisterError]=useState('');
+    const [success,setSuccess]=useState('');
     const handleRegister = e =>{
         e.preventDefault();
         const email = e.target.email.value;
         const password=e.target.password.value;
         console.log(email,password);
+        setRegisterError('');
         createUserWithEmailAndPassword(auth,email,password)
         .then(result =>{
             console.log(result.user);
+            setSuccess('User created Suceesfully')
         })
         .catch(error=>{
             console.error(error);
@@ -102,6 +105,9 @@ const Register = () => {
             </form>
             {
                 registerError && <p className="text-red-900">{registerError}</p>
+            }
+            {
+                success && <p className="text-green-800">{success}</p>
             }
           </div>
         </div>
