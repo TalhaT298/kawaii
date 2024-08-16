@@ -53,7 +53,7 @@ const Login = () => {
     //reset error
     setRegisterError('');
     setSuccess('');
-    
+
     //add validaton
     signInWithEmailAndPassword(auth,email,password)
     .then(result=>{
@@ -120,6 +120,7 @@ const Login = () => {
             {
                 success && <p className="text-green-800">{success}</p>
             }
+            <p>New to this website please <Link to="/register">Register</Link></p>
           </div>
         </div>
       </div>

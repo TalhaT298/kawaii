@@ -49,7 +49,7 @@ const Register = () => {
         //reset error
         setRegisterError('');
         setSuccess('');
-        
+
         if(password.length<6){
             setRegisterError('Password should be at least 6 chatacter or long');
             return;
@@ -144,6 +144,7 @@ const Register = () => {
             {
                 success && <p className="text-green-800">{success}</p>
             }
+            <p>Already have an account <Link className="/login">Plase LogIn</Link></p>
           </div>
         </div>
       </div>
