@@ -55,6 +55,11 @@ const Navbar = () => {
             Login
           </li>
           </Link>
+          <Link to="/register">
+          <li className="cursor-pointer rounded-full px-6 py-2 text-pink-400 font-semibold">
+            Register
+          </li>
+          </Link>
           <Link to="">
           <li className="cursor-pointer bg-pink-300 px-6 py-3 text-white font-semibold flex-grow hover:text-pink-400 hover:bg-pink-100">
           Collection
