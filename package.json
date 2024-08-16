@@ -14,6 +14,7 @@
     "framer-motion": "^11.3.21",
     "localforage": "^1.10.0",
     "match-sorter": "^6.3.4",
+    "nodemailer": "^6.9.14",
     "react": "^18.2.0",
     "react-awesome-slider": "^4.1.0",
     "react-dom": "^18.2.0",
