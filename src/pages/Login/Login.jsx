@@ -58,16 +58,26 @@ const Login = () => {
     signInWithEmailAndPassword(auth,email,password)
     .then(result=>{
         console.log(result.user);
-        setSuccess('User Login Successfully');
+        setSuccess('User Login Successfully')
     })
     .catch(error=>{
         console.error(error);
         setRegisterError(error.message);
-    });
+    })
   };
 
-  const handleForgetPassword = e =>{
-    console.log('send rest mail',emailRef.current.value);
+  const handleForgetPassword = () =>{
+    const email = emailRef.current.value;
+    
+    
+    if(!email){
+        console.log('send rest mail',emailRef.current.value);
+        return;
+    }
+    else if(!/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(email)){
+      console.log('Please write a valid email');
+      return;
+    }
   }
   return (
     <div>
@@ -89,7 +99,7 @@ const Login = () => {
                   <span className="label-text">Email</span>
                 </label>
                 <input
-                  type="email"
+                  type="text"
                   name="email"  // Added name attribute
                   ref={emailRef}
                   placeholder="email"
